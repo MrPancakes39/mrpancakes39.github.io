@@ -49,20 +49,41 @@ p {
     color: #FFFFFF;
 }
 
-.greetings {
+.center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.greetings h1 {
+h1.title {
     font-family: 'Anonymous Pro', 'Courier New', Courier, monospace;
     font-size: 8rem;
     font-weight: bold;
 }
 
-.greetings h2 {
+h2.title {
     font-family: 'Anonymous Pro', 'Courier New', Courier, monospace;
     font-size: 4rem;
+}
+
+.grid-20-80 {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: repeat(var(--nrows), 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+        ". .";
+}
+
+#about img {
+    width: 78%;
+    margin: 0 auto;
+    filter: drop-shadow(0vw 0.5vw 0.3vw #333333);
+}
+
+#about p {
+    width: 85%;
+    font-size: 2vw;
+    margin: auto 0;
 }
