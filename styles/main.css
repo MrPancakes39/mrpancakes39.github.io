@@ -1,0 +1,68 @@
+body {
+    /*
+     *  Photo by Paul Volkmer
+     *  https://unsplash.com/photos/qVotvbsuM_c
+     */
+    background-image: url("../assets/background.jpg");
+}
+
+.nav-bar {
+    width: 100%;
+    height: 6rem;
+    background: #000000;
+}
+
+.nav-bar>ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-bar>ul>li {
+    padding-right: 1.5em;
+    margin: 0;
+}
+
+.nav-bar>ul>li>a {
+    color: #a1a1a1;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-bar>ul>.active>a,
+.nav-bar>ul>li>a:hover {
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: #FFFFFF;
+}
+
+.greetings {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.greetings h1 {
+    font-family: 'Anonymous Pro', 'Courier New', Courier, monospace;
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.greetings h2 {
+    font-family: 'Anonymous Pro', 'Courier New', Courier, monospace;
+    font-size: 4rem;
+}
