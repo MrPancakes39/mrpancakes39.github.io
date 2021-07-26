@@ -40,6 +40,13 @@ body {
     color: white;
 }
 
+.nav-bar>ul>div {
+    width: 10rem;
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+}
+
 h1,
 h2,
 h3,
@@ -107,4 +114,18 @@ h2.title {
 
 #projects h4 {
     margin-bottom: 1rem;
+}
+
+.ic {
+    width: auto;
+    height: 4rem;
+    margin-right: 5px;
+}
+
+.ic-gmail {
+    content: url("../assets/gmail.svg");
+}
+
+.ic-github {
+    content: url("../assets/github.svg");
 }
