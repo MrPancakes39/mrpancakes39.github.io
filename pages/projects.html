@@ -21,57 +21,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
 
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- JS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 </head>
 
 <body>
     <nav class="nav-bar">
         <ul>
-            <li><a href="../index.html">Home</a></li>
+            <li><a class="close_nav">&times;</a></li>
+            <li><a href="../">Home</a></li>
             <li class="active"><a href="#">Projects</a></li>
             <li><a href="./about.html">About</a></li>
-            <div>
+            <div class="icons">
                 <a class="ic ic-gmail" href="mailto:salmannhassan39@gmail.com"></a>
                 <a class="ic ic-github" href="https://github.com/MrPancakes39" target="_blank"></a>
             </div>
         </ul>
     </nav>
     <main>
-        <div id="projects" class="u-full-width">
-            <div class="grid-30-70">
-                <img src="../assets/thumbnails/fourier-viz-thumb.jpg">
-                <div>
-                    <h1>Fourier Visualizer</h1>
-                    <h4>A tool to help visualize any Fourier Series / Discrete Fourier Transform.</h4>
-                    <h5><a href="https://mrpancakes39.github.io/Fourier-Visualizer/" target="_blank">View Live App</a></h5>
-                </div>
-            </div>
-            <div class="grid-30-70">
-                <img src="../assets/thumbnails/md-view-thumb.jpg">
-                <div>
-                    <h1>Markdown-Viewer</h1>
-                    <h4>A Simple Markdown Viewer for rest of us.</h4>
-                    <h5><a href="https://github.com/MrPancakes39/Markdown-Viewer" target="_blank">View Source Code</a></h5>
-                </div>
-            </div>
-            <div class="grid-30-70">
-                <img src="../assets/thumbnails/sal-kun-thumb.jpg">
-                <div>
-                    <h1>Sal-Discord-Bot</h1>
-                    <h4>A nice Discord Bot named Sal-kun.</h4>
-                    <h5><a href="https://github.com/MrPancakes39/Sal-Discord-Bot" target="_blank">View Source Code</a></h5>
-                </div>
-            </div>
-            <div class="grid-30-70">
-                <img src="../assets/thumbnails/svg-tool-thumb.jpg">
-                <div>
-                    <h1>SVG-Tool</h1>
-                    <h4>A simple tool allows you to take an SVG and calculates the Mathematical Equations of the Bézier Curves.</h4>
-                    <h5><a href="https://mrpancakes39.github.io/SVG-Tool/" target="_blank">View Live App</a></h5>
-                </div>
-            </div>
+        <div class="menu_icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
+        <div id="projects" class="u-full-width"></div>
     </main>
+
+    <script src="../js/projects.js"></script>
 </body>
 
 </html>
