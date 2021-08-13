@@ -1,0 +1,33 @@
+projects:
+
+  # Template:
+  # - title: 
+  #   image: 
+  #   desc: 
+  #   link: 
+  #   liveApp: 
+  # Made By Salman Hasan.
+
+  - title: "SVG-Tool"
+    image: "svg-tool-thumb.jpg"
+    desc: "A simple tool allows you to take an SVG and calculates the Mathematical Equations of the Bézier Curves."
+    link: "https://mrpancakes39.github.io/SVG-Tool/"
+    liveApp: true
+  
+  - title: "Sal-Discord-Bot"
+    image: "sal-kun-thumb.jpg"
+    desc: "A nice Discord Bot named Sal-kun."
+    link: "https://github.com/MrPancakes39/Sal-Discord-Bot/"
+    liveApp: false
+
+  - title: "Markdown-Viewer"
+    image: "md-view-thumb.jpg"
+    desc: "A Simple Markdown Viewer for rest of us."
+    link: "https://github.com/MrPancakes39/Markdown-Viewer/"
+    liveApp: false
+
+  - title: "Fourier Visualizer"
+    image: "fourier-viz-thumb.jpg"
+    desc: "A tool to help visualize any Fourier Series / Discrete Fourier Transform."
+    link: "https://mrpancakes39.github.io/Fourier-Visualizer/"
+    liveApp: true
