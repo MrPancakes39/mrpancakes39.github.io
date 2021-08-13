@@ -27,16 +27,22 @@
 <body>
     <nav class="nav-bar">
         <ul>
+            <li><a class="close_nav">&times;</a></li>
             <li><a href="../index.html">Home</a></li>
             <li class="active"><a href="#">Projects</a></li>
             <li><a href="./about.html">About</a></li>
-            <div>
+            <div class="icons">
                 <a class="ic ic-gmail" href="mailto:salmannhassan39@gmail.com"></a>
                 <a class="ic ic-github" href="https://github.com/MrPancakes39" target="_blank"></a>
             </div>
         </ul>
     </nav>
     <main>
+        <div class="menu_icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <div id="projects" class="u-full-width">
             <div class="grid-30-70">
                 <img src="../assets/thumbnails/fourier-viz-thumb.jpg">
@@ -72,6 +78,20 @@
             </div>
         </div>
     </main>
+
+    <script>
+        let menu_icon = document.querySelector(".menu_icon");
+        let nav = document.querySelector(".nav-bar>ul");
+        let closebtn = document.querySelector(".close_nav");
+
+        menu_icon.addEventListener("click", () => {
+            nav.style.width = "210px";
+        });
+
+        closebtn.addEventListener("click", () => {
+            nav.style.width = "0";
+        });
+    </script>
 </body>
 
 </html>

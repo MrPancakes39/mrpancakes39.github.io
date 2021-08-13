@@ -26,21 +26,41 @@
 <body>
     <nav class="nav-bar">
         <ul>
+            <li><a class="close_nav">&times;</a></li>
             <li><a href="../index.html">Home</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li class="active"><a href="#">About</a></li>
-            <div>
+            <div class="icons">
                 <a class="ic ic-gmail" href="mailto:salmannhassan39@gmail.com"></a>
                 <a class="ic ic-github" href="https://github.com/MrPancakes39" target="_blank"></a>
             </div>
         </ul>
     </nav>
     <main>
+        <div class="menu_icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
         <div id="about" class="u-full-width center grid-30-70">
             <img src="../assets/me.jpg" alt="picture of me">
             <p>I’m Salman Hasan and I’m a web developer. I’m very passionate about Math and IT. I love app development and learning about cybersecurity is my hobby. Currently, I’m a Lebanese University student studying Computer Communications Networks Engineering (CCNE).</p>
         </div>
     </main>
+
+    <script>
+        let menu_icon = document.querySelector(".menu_icon");
+        let nav = document.querySelector(".nav-bar>ul");
+        let closebtn = document.querySelector(".close_nav");
+
+        menu_icon.addEventListener("click", () => {
+            nav.style.width = "210px";
+        });
+
+        closebtn.addEventListener("click", () => {
+            nav.style.width = "0";
+        });
+    </script>
 </body>
 
 </html>
