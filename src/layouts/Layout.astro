@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string;
+  author?: string;
+  description?: string;
+}
+
+const { title, author = "MrPancakes39", description = "" } = Astro.props;
+---
+
+<!doctype html>
+<html transition:animate="none" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="author" content={author} />
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <h1>Footer</h1>
+    </footer>
+  </body>
+</html>
