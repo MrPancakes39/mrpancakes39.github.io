@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import img from "~/assets/images/404.webp";
+---
+
+<BaseLayout
+  title="404 - Page Not Found"
+  description="The page you're looking for doesn't exist."
+  showHeader={false}>
+  <div class="text-center text-xl flex flex-col items-center gap-4 h-full justify-center">
+    <Image src={img} alt="Goofy GIF" height={256} />
+    <h1 class="font-cursive text-9xl">404</h1>
+    <div>
+      <p class="text-[#5C5B77] mb-2">It seems like you've wandered into the wrong forest!</p>
+      <a class="text-link hover:underline decoration-2" href="/">Return Home</a>
+    </div>
+  </div>
+</BaseLayout>

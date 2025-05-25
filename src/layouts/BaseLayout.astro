@@ -12,9 +12,17 @@ interface Props {
   title: string;
   author?: string;
   description?: string;
+  showHeader?: boolean;
+  showFooter?: boolean;
 }
 
-const { title, author = "Sal Hasan", description = "" } = Astro.props;
+const {
+  title,
+  author = "Sal Hasan",
+  description = "",
+  showHeader = true,
+  showFooter = true,
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -29,9 +37,9 @@ const { title, author = "Sal Hasan", description = "" } = Astro.props;
     <meta name="author" content={author} />
     <meta name="description" content={description} />
   </head>
-  <body class="max-w-135 mx-auto">
-    <Header />
-    <main>
+  <body class="max-w-135 mx-auto flex flex-col">
+    {showHeader && <Header />}
+    <main class="flex-1">
       <slot />
     </main>
   </body>
