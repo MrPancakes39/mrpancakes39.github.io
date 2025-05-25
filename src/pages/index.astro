@@ -1,9 +1,53 @@
 ---
+import { Image } from "astro:assets";
 import Badge from "~/components/ui/Badge.astro";
 import BaseLayout from "~/layouts/BaseLayout.astro";
+import img from "~/assets/images/space.webp";
 ---
 
-<BaseLayout title="Home">
-  <h1>Hello, world!</h1>
-  <Badge>New</Badge>
+<BaseLayout title="Home" description="Homepage of MrPancakes39" class="flex flex-col gap-8">
+  <section>
+    <Image src={img} alt="Space GIF" height={260} class="mx-auto" />
+  </section>
+  <section>
+    <h1 class="font-cursive text-5xl mb-2">Sal Hasan</h1>
+    <Badge class="text-sm font-semibold">Software Engineer</Badge>
+  </section>
+  <section class="space-y-6 text-lg">
+    <h2
+      class="font-cursive text-4xl underline decoration-underline decoration-4 underline-offset-6">
+      About
+    </h2>
+    <p>Welcome! I'm glad you're here.</p>
+    <p>
+      I created this website as a personal space to share my projects, ideas, and the things I'm
+      passionate about. I wanna showcase my portfolio and connect with others who share my curiosity
+      for math, technology, and creative problem-solving.
+    </p>
+    <p>
+      I'm a CS graduate from the Lebanese University, and I'm currently working as a software
+      engineer at a startup. I'm excited to explore new opportunities and contribute to the tech
+      community.
+    </p>
+    <p>
+      One of my favorite ongoing projects is <a
+        href="https://github.com/MrPancakes39/Desmos-Offline-Mode/tree/develop"
+        target="_blank"
+        rel="noopener noreferrer">Desmos Offline Mode</a
+      >. I've always admired the Desmos graphing calculator, and I wanted to make it accessible as a
+      desktop application. I've been working on a major rewrite to make the development sustainable
+      for the future. I hope it'll be useful and even more versatile for students and enthusiasts
+      alike.
+    </p>
+    <p>
+      My interests don't stop at web development. I'm also passionate about low level programming,
+      hoping to contribute to the linux kernel and other open-source projects. I dabble in data
+      science, signal processing, and mathematics. I'm always looking for new challenges and
+      opportunities to learn and grow.
+    </p>
+    <p>
+      Thank you for visiting my site. I hope my work sparks your curiosity and encourages you to
+      explore, learn, and create. If you'd like to connect or collaborate, feel free to reach out!
+    </p>
+  </section>
 </BaseLayout>
