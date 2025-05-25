@@ -4,6 +4,9 @@
     "": {
       "name": "mrpancakes39.github.io",
       "dependencies": {
+        "@fontsource/atkinson-hyperlegible": "^5.2.5",
+        "@fontsource/iosevka-aile": "^5.2.5",
+        "@fontsource/pacifico": "^5.2.5",
         "@tailwindcss/vite": "^4.1.7",
         "astro": "^5.8.0",
         "tailwindcss": "^4.1.7",
@@ -90,6 +93,12 @@
     "@esbuild/win32-ia32": ["@esbuild/win32-ia32@0.25.4", "", { "os": "win32", "cpu": "ia32" }, "sha512-i1sW+1i+oWvQzSgfRcxxG2k4I9n3O9NRqy8U+uugaT2Dy7kLO9Y7wI72haOahxceMX8hZAzgGou1FhndRldxRg=="],
 
     "@esbuild/win32-x64": ["@esbuild/win32-x64@0.25.4", "", { "os": "win32", "cpu": "x64" }, "sha512-nOT2vZNw6hJ+z43oP1SPea/G/6AbN6X+bGNhNuq8NtRHy4wsMhw765IKLNmnjek7GvjWBYQ8Q5VBoYTFg9y1UQ=="],
+
+    "@fontsource/atkinson-hyperlegible": ["@fontsource/atkinson-hyperlegible@5.2.5", "", {}, "sha512-looo8B/DHWsKG439j4hHsr2Fq3/CRkM9gpwxUu35aID4q24tYgxLmQqHbwAKA8+uV7y/fHnPkqBNsM83g+cu2A=="],
+
+    "@fontsource/iosevka-aile": ["@fontsource/iosevka-aile@5.2.5", "", {}, "sha512-K9EwsSxfWPWjvrYM+NkgHaImpHgaVgC67l6uWf6W+4taeca6LKMJn/U11mQiRwLlecoI0PP2Q9o/8iIPaLOSgg=="],
+
+    "@fontsource/pacifico": ["@fontsource/pacifico@5.2.5", "", {}, "sha512-JpimzPRR6Hh2jIj3x+6Wzk8vBv9IdInuu2y0muGnpQQIOscyQdM4i8bSSszgOoH4WD3PuUpMGHCi4ZBNtoekWA=="],
 
     "@img/sharp-darwin-arm64": ["@img/sharp-darwin-arm64@0.33.5", "", { "optionalDependencies": { "@img/sharp-libvips-darwin-arm64": "1.0.4" }, "os": "darwin", "cpu": "arm64" }, "sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ=="],
 

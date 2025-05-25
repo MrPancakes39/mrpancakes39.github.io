@@ -16,6 +16,9 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@fontsource/atkinson-hyperlegible": "^5.2.5",
+    "@fontsource/iosevka-aile": "^5.2.5",
+    "@fontsource/pacifico": "^5.2.5",
     "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.8.0",
     "tailwindcss": "^4.1.7"

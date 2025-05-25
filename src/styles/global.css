@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  /*
+    * [Fonts]
+    * Custom fonts with default fallback to system fonts
+    * https://systemfontstack.com/
+    */
+  --font-cursive: "Pacifico", cursive;
+  --font-serif: "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman",
+    "Droid Serif, Times", "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --font-sans: "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+    "segoe ui", "helvetica neue", "Adwaita Sans", Cantarell, Ubuntu, roboto, noto, helvetica, arial,
+    sans-serif;
+  --font-mono: "Iosevka Aile", Menlo, Consolas, Monaco, "Adwaita Mono", "Liberation Mono",
+    "Lucida Console", monospace;
+}
