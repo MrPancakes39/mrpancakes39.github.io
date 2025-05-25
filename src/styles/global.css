@@ -16,3 +16,30 @@
   --font-mono: "Iosevka Aile", Menlo, Consolas, Monaco, "Adwaita Mono", "Liberation Mono",
     "Lucida Console", monospace;
 }
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-link: var(--link);
+  --color-underline: #375a7f;
+}
+
+:root {
+  --background: #fcebf3;
+  --foreground: #1e1e2e;
+  --link: #375a7f;
+}
+
+.dark {
+  --background: #1e1e2e;
+  --foreground: #eff1f5;
+  --link: #78c2ad;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
