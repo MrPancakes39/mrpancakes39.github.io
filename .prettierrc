@@ -5,6 +5,14 @@
   "bracketSameLine": true,
   "trailingComma": "es5",
 
-  "plugins": ["prettier-plugin-tailwindcss"],
-  "tailwindStylesheet": "./src/styles/global.css"
+  "plugins": ["prettier-plugin-tailwindcss", "prettier-plugin-astro"],
+  "tailwindStylesheet": "./src/styles/global.css",
+  "overrides": [
+    {
+      "files": "*.astro",
+      "options": {
+        "parser": "astro"
+      }
+    }
+  ]
 }
