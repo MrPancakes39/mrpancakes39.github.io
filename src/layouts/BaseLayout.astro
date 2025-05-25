@@ -6,6 +6,8 @@ import "@fontsource/iosevka-aile";
 // Styles
 import "../styles/global.css";
 
+import ModeToggle from "~/components/ModeToggle.astro";
+
 interface Props {
   title: string;
   author?: string;
@@ -30,6 +32,7 @@ const { title, author = "Sal Hasan", description = "" } = Astro.props;
   <body>
     <header>
       <h1>Header</h1>
+      <ModeToggle client:load />
     </header>
     <main>
       <slot />
@@ -39,3 +42,25 @@ const { title, author = "Sal Hasan", description = "" } = Astro.props;
     </footer>
   </body>
 </html>
+
+<!-- Theme Preference -->
+<script is:inline>
+  function updateTheme() {
+    const theme =
+      localStorage.getItem("theme") ??
+      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    const isDark = theme === "dark";
+    document.documentElement.classList[isDark ? "add" : "remove"]("dark");
+  }
+
+  updateTheme();
+  document.addEventListener("astro:after-swap", updateTheme);
+
+  if (typeof localStorage !== "undefined") {
+    const observer = new MutationObserver(() => {
+      const isDark = document.documentElement.classList.contains("dark");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+  }
+</script>

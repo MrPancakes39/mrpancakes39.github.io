@@ -25,18 +25,21 @@
   --color-foreground: var(--foreground);
   --color-link: var(--link);
   --color-underline: #375a7f;
+  --color-ring: var(--ring);
 }
 
 :root {
   --background: #fcebf3;
   --foreground: #1e1e2e;
   --link: #375a7f;
+  --ring: oklch(0.708 0 0);
 }
 
 .dark {
   --background: #1e1e2e;
   --foreground: #eff1f5;
   --link: #78c2ad;
+  --ring: oklch(0.556 0 0);
 }
 
 @layer base {

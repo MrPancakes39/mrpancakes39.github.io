@@ -1,0 +1,23 @@
+---
+import { MoonIcon, SunIcon } from "@lucide/astro";
+---
+
+<button
+  id="mode-toggle"
+  class="inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-white/5 h-8 w-8">
+  <SunIcon class="w-6 h-6 dark:hidden flex" />
+  <MoonIcon class="w-6 h-6 dark:flex hidden" />
+</button>
+
+<script>
+  const btn = document.getElementById("mode-toggle");
+  btn?.addEventListener("click", () => {
+    const theme =
+      localStorage.getItem("theme") ??
+      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    const currentlyDark = theme === "dark";
+
+    localStorage.setItem("theme", currentlyDark ? "light" : "dark");
+    document.documentElement.classList[currentlyDark ? "remove" : "add"]("dark");
+  });
+</script>
