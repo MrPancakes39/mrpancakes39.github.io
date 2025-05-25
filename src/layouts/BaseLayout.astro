@@ -6,7 +6,7 @@ import "@fontsource/iosevka-aile";
 // Styles
 import "../styles/global.css";
 
-import ModeToggle from "~/components/ModeToggle.astro";
+import Header from "~/components/Header.astro";
 
 interface Props {
   title: string;
@@ -30,16 +30,10 @@ const { title, author = "Sal Hasan", description = "" } = Astro.props;
     <meta name="description" content={description} />
   </head>
   <body>
-    <header>
-      <h1>Header</h1>
-      <ModeToggle client:load />
-    </header>
+    <Header />
     <main>
       <slot />
     </main>
-    <footer>
-      <h1>Footer</h1>
-    </footer>
   </body>
 </html>
 

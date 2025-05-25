@@ -1,0 +1,15 @@
+---
+import ModeToggle from "./ModeToggle.astro";
+---
+
+<header>
+  <nav transition:persist>
+    <a href="/" class="font-cursive">MrPancakes39</a>
+    <ul>
+      <li></li>
+      <li>
+        <ModeToggle client:load />
+      </li>
+    </ul>
+  </nav>
+</header>
