@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /*
+    * [Fonts]
+    * Custom fonts with default fallback to system fonts
+    * https://systemfontstack.com/
+    */
+  --font-cursive: "Pacifico", cursive;
+  --font-serif:
+    "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif, Times",
+    "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-sans:
+    "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui",
+    "helvetica neue", "Adwaita Sans", Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
+  --font-mono:
+    "Iosevka Aile", Menlo, Consolas, Monaco, "Adwaita Mono", "Liberation Mono", "Lucida Console",
+    monospace;
+}
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-link: var(--link);
+  --color-underline: var(--underline);
+  --color-ring: var(--ring);
+}
+
+@layer base {
+  :root {
+    /* The Variables don't change in dark mode */
+    --underline: #375a7f;
+    --radius: 0.625rem;
+    /* Theme Colors */
+    --background: #fcebf3;
+    --foreground: #1e1e2e;
+    --link: #375a7f;
+    --ring: oklch(0.708 0 0);
+  }
+
+  .dark {
+    --background: #1e1e2e;
+    --foreground: #eff1f5;
+    --link: #78c2ad;
+    --ring: oklch(0.556 0 0);
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html,
+  body {
+    @apply min-h-full;
+  }
+}
