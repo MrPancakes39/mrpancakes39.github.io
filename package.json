@@ -2,7 +2,7 @@
   "name": "mrpancakes39.github.io",
   "private": true,
   "type": "module",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
